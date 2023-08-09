@@ -1,0 +1,21 @@
+{
+  "name": "paws",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "firebase": "^10.1.0",
+    "vue": "^3.2.13",
+    "vue-country-dropdown": "^2.0.8",
+    "vue-country-flag-next": "^2.3.2",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-service": "~5.0.0"
+  }
+}

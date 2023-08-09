@@ -1,0 +1,446 @@
+
+
+
+/* ++++++++++ body style */
+body {
+	margin: 0px;
+	padding: 0px;
+	transition: scrollbar-width 20s ease-in;
+
+	overflow: auto;
+
+	display: flex;
+	flex-direction: column;
+	
+background-color: #f1f1f1;
+
+
+}
+
+/* ---------- body style */
+
+
+/* ++++++++++ NAV BAR ++++++++++ */
+#navbar {
+	background-color: #469387; 
+	/* position: fixed; /* Make it stick/fixed */
+	top: 0px; /* Hide the navbar 50 px outside of the top view. ali ja sam umesto -50px, stavio 0px, jer onda default prikaze navbar. */ 
+	width: 100%; /* Full width */
+	transition: top 0.3s; /* Transition effect when sliding down (and up) */
+
+	display: flex;
+	justify-content: space-around; /* Center the buttons horizontally */
+	align-items: center; /* Center the buttons vertically */
+
+}
+
+
+
+
+/* Style the first few buttons */
+#navbar_first_buttons {
+
+	display: flex;
+	justify-content: space-evenly; /* Center the buttons horizontally */
+	align-items: center; /* Center the buttons vertically */
+	margin-left: 30px;
+	margin-right: 90px;
+	font-family: 'Amatic SC', cursive;
+	font-size: 18pt;
+
+}
+
+
+
+/* Style the first few buttons */
+#navbar_first_buttons a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+
+}
+
+
+/* + effect on hover for first buttons  */
+#navbar_first_buttons a:hover {
+	position: relative;
+}
+
+#navbar_first_buttons a:hover::before,
+#navbar_first_buttons a:hover::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background-color: #aad3dc;
+	transition: width 0.3s ease;
+}
+
+#navbar_first_buttons a:hover::before {
+	top: 0;
+	left: 0;
+}
+
+#navbar_first_buttons a:hover::after {
+	bottom: 0;
+	right: 0;
+}
+
+#navbar_first_buttons a:hover::before {
+	animation: loading-before 0.3s forwards;
+}
+
+#navbar_first_buttons a:hover::after {
+	animation: loading-after 0.3s forwards;
+}
+
+@keyframes loading-before {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+@keyframes loading-after {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+/* - effect on hover for first buttons  */
+
+
+
+
+/* + effect on hover for second buttons  */
+
+
+/* layout of buttons those */
+#navbar_second_buttons a {
+
+
+	position: relative;
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	font-size: 10pt;
+	color: #e69739;
+	text-decoration: underline 
+
+
+}
+
+/* samo login button treba style */
+#navbar_second_buttons_login {
+
+	font-family: 'Amatic SC', cursive;
+
+	padding: 10px 20px;
+	background-color: #aad3dc;
+	color: black;
+	border: none;
+	transition: transform 0.3s ease;
+	border-radius: 30px; 
+	font-size: 12pt;
+
+	cursor: pointer; /* Change the cursor to "select" */
+
+
+
+}
+
+
+#navbar_second_buttons_login:hover {
+	transform: scale(1.2);
+}
+
+
+/* - effect on hover for second buttons  */
+
+
+
+
+/* ------------------- NAV BAR ----------------- */
+
+
+
+
+
+
+
+
+/* ++++++++++ footer ++++++++++ */
+
+/* ono kada nema content, da, normalno je da on tako prikaze, da se podigne. eto na xda forum, isto se podigne kada obrises sve.
+ * nego samo ne ostavljas prazan content, ali to tako ide kada nema content. znaci sve je normalno i okej.. */
+
+
+.footer-basic {
+	padding:30px 0;
+	background-color:#0D0D0D;
+	color:#4b4c4d;
+
+
+	/* da prikazuje kao tačkice, tačkice su jako male, i ima dobar efekat 
+	background-image: radial-gradient(#121212 1px, transparent 1px);
+	background-size: 3.7px 3.7px;
+	background-position: center center;
+	background-repeat: repeat;
+	*/
+
+
+	font-family: 'Lato', sans-serif;
+
+}
+
+.footer-basic ul {
+	padding:0;
+	list-style:none;
+	text-align:center;
+	font-size:18px;
+	line-height:1.6;
+	margin-bottom:0;
+}
+
+.footer-basic li {
+	padding:0 10px;
+
+
+
+
+}
+
+.footer-basic ul a {
+	color:inherit;
+	text-decoration:none;
+	opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+	opacity:1;
+}
+
+.footer-basic .social {
+	text-align:center;
+	padding-bottom:5px;
+}
+
+.footer-basic .social > a {
+	font-size:24px;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	display:inline-block;
+	text-align:center;
+	border-radius:50%;
+	border:1px solid #ccc;
+	margin:0 8px;
+	color:inherit;
+	opacity:0.75;
+	padding-top: 0px;
+
+	transition: box-shadow 0.3s ease-in-out;
+
+
+}
+
+/*
+.footer-basic .social > a:hover {
+box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff;
+}
+ */
+
+
+
+/* instagram change on hover */
+#insta:hover {
+	box-shadow: 0 0 5px #E4405F, 0 0 10px #E4405F, 0 0 20px #E4405F;
+	border:1px solid #C13584;
+
+}
+
+
+
+/* snapchat change on hover */
+#snap:hover {
+	box-shadow: 0 0 5px #FFFC00, 0 0 10px #FFFC00, 0 0 20px #FFFC00;
+	border:1px solid #FFDC00;
+
+}
+
+/* twitter change on hover */
+#twitter:hover {
+	box-shadow: 0 0 5px #1DA1F2, 0 0 10px #1DA1F2, 0 0 20px #1DA1F2;
+	border:1px solid #0D95E8;
+
+}
+
+/* facebook change on hover */
+#facebook:hover {
+	box-shadow: 0 0 5px #1877F2, 0 0 10px #1877F2, 0 0 20px #1877F2;
+	border:1px solid #0E3A8C;
+
+}
+
+.footer-basic .copyright {
+	margin-top:15px;
+	text-align:center;
+	font-size:13px;
+	color:#aaa;
+	margin-bottom:0;
+
+}
+
+.list-inline {
+	display: flex;
+	justify-content: center;
+	/* beli tekst za ove linkove dole */
+	color: white;
+	
+
+	@media (max-width: 730px) {
+    /*font-size: 14px; /* Adjust this size as needed */
+	flex-direction: column !important; 
+
+}
+
+	
+
+}
+
+/* ---------- footer ---------- */
+
+
+
+
+/* ++++++++++ help.vue component ++++++++++ */
+.help {
+	/*margin-left: 5%;*/
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.help_div {
+	margin-top: 3em;
+	margin-bottom: 3em;
+	margin-left:5%;
+	margin-right:5%;
+
+}
+
+/* ---------- help.vue component ---------- */
+
+
+
+
+
+ 
+/* ++++++++++ floating button ++++++++++ */
+
+.fab-container{
+
+position:fixed;
+
+bottom:50px;
+
+right:50px;
+
+cursor:pointer;
+
+}
+
+
+.iconbutton, .button{
+
+width:50px;
+
+height:50px;
+
+border-radius: 100%;
+
+background:#fff;
+
+transition: all 0.3s ease; 
+
+
+}
+
+.button{
+
+width:60px;
+
+height:60px;
+
+
+}
+
+
+
+.iconbutton i{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+height: 100%;
+
+
+
+
+}
+
+
+
+/* Apply larger size when hovered */
+.iconbutton:hover, .button:hover {
+  width: 70px; /* Increase width */
+  height: 70px; /* Increase height */
+}
+
+.iconbutton i:hover {
+	color: #000 !important;	
+}
+
+/* ----------- floating button ---------- */
+
+
+
+
+/* ++++++++++ filter div ++++++++++ */
+.filter_div {
+	display: flex; 
+	justify-content: center; 
+	flex-direction: column;
+align-items: center;
+margin-top: 1em;
+
+}
+
+/* Define the CSS transition */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s, transform 0.5s;
+}
+.fade-enter, .fade-leave-to, .fade-leave-active {
+  opacity: 0;
+  transform: translateY(-20px); /* Move element up initially */
+}
+
+/* ---------- filter div ---------- */
+
