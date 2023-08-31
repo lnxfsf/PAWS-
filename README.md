@@ -1,4 +1,4 @@
-# paws
+# PAWS
 
 ![1](https://github.com/lnxfsf/PAWS-/assets/99252096/d1a80aea-d6b8-4d7b-bacf-b4c48d91236e)
 
