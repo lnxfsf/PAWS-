@@ -8,17 +8,11 @@
 
 	<!-- LOGIN  -->
 	<form @submit.prevent="login" autocomplete="off" class="sign-in-form">
-		<div class="logo">
-			<h4>PAWS</h4>
-		</div>
-
+		
 		<div class="heading">
-			<h2>Welcome Back</h2>
-			<h6>Not registred yet?</h6>
-			<a href="#" class="toggle">Sign up</a>
+			<h2>Sign In</h2>
 		</div>
 
-		<div class="actual-form">
 			<div class="input-wrap">
 				<input
 						v-model="email"
@@ -27,8 +21,8 @@
 						class="input-field"
 						autocomplete="off"
 						required
+						placeholder="Email"
 						/>
-				<label>Email</label>
 			</div>
 
 			<div class="input-wrap">
@@ -39,17 +33,18 @@
 						class="input-field"
 						autocomplete="off"
 						required
+						placeholder="Password"
 						/>
-				<label>Password</label>
 			</div>
 
-			<input type="submit" value="Sign In" class="sign-btn" />
+			<input type="submit" value="Sign In" class="sign-btn button-3" />
 
+			<!-- 
 			<p class="text">
 			Forgotten your password or you login datails?
 			<a href="#">Reset password</a> 
 			</p>
-		</div>
+-->
 	</form>
 
 
@@ -58,18 +53,12 @@
 
 	<!-- SIGN UP -->
 	<form  @submit.prevent="signup"  autocomplete="off" class="sign-up-form">
-		<div class="logo">
-			<h4>PAWS</h4>
-		</div>
-
+		
 		<div class="heading">
-			<h2>Get Started</h2>
-			<h6>Already have an account?</h6>
-			<a href="#" class="toggle">Sign in</a>
+			<h2>Sign up</h2>
 		</div>
 
-		<div class="actual-form">
-			<div class="input-wrap">
+					<div class="input-wrap">
 				<input
 						v-model="name"
 						type="text"
@@ -77,8 +66,8 @@
 						class="input-field"
 						autocomplete="off"
 						required
+						placeholder="Name"
 						/>
-				<label>Name</label>
 			</div>
 
 			<div class="input-wrap">
@@ -88,9 +77,9 @@
 						class="input-field"
 						autocomplete="off"
 						required
+						placeholder="Email"
 
 						/>
-				<label>Email</label>
 			</div>
 
 			<div class="input-wrap">
@@ -101,28 +90,26 @@
 						class="input-field"
 						autocomplete="off"
 						required
+						placeholder="Password"
 						/>
-				<label>Password</label>
 			</div>
 
-			<input type="submit" value="Sign Up" class="sign-btn" />
+			<input type="submit" value="Sign Up" class="sign-btn button-3" />
 
 
+			<!--
 			<p class="text">
 			By signing up, I agree to the
 			<a href="TOS.html#TOS">Terms of Services</a> and
 			<a href="TOS.html#privacy">Privacy Policy</a>
 			</p>
-		</div>
+
+		-->
 	</form>
 
 
 
 
-
-	<p >{{ name }}</p>
-	<p >{{ email }}</p>
-	<p >{{  password }}</p>
 
 
 
@@ -249,3 +236,74 @@
 
 
 </script>
+
+
+
+<style scoped>
+.sign-up-form, .sign-in-form {
+	display: flex;
+
+align-items: center;
+    justify-content: center;
+flex-direction: column;
+margin: 5em;
+row-gap: 0.5em;
+}
+
+			
+
+
+.button-3 {
+	appearance: none;
+	background-color: #469387;
+	border: 1px solid rgba(27, 31, 35, .15);
+	border-radius: 6px;
+	box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	padding: 6px 16px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+	box-shadow: none;
+	outline: none;
+}
+
+.button-3:hover {
+	background-color: #2c974b;
+}
+
+.button-3:focus {
+	box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+	outline: none;
+}
+
+.button-3:disabled {
+	background-color: #94d3a2;
+	border-color: rgba(27, 31, 35, .1);
+	color: rgba(255, 255, 255, .8);
+	cursor: default;
+}
+
+.button-3:active {
+	background-color: #298e46;
+	box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+
+
+</style>
