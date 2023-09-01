@@ -11,6 +11,7 @@
 
 ![5](https://github.com/lnxfsf/PAWS-/assets/99252096/79f8be2a-260b-4adc-88c9-15181e3aab6c)
 
+![6](https://github.com/lnxfsf/PAWS-/assets/99252096/7614e2e7-6bde-4971-98b3-3d4c9431231c)
 
 
 -----
