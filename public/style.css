@@ -29,8 +29,19 @@ background-color: #f1f1f1;
 	transition: top 0.3s; /* Transition effect when sliding down (and up) */
 
 	display: flex;
-	justify-content: space-around; /* Center the buttons horizontally */
+	justify-content: space-between; /* Center the buttons horizontally */
 	align-items: center; /* Center the buttons vertically */
+
+	/* 
+
+
+
+9.5.2023 - fix 
+
+
+	
+	ovo treba izemniti da sa leve i desne strane centriran */
+	padding: 0 1rem;
 
 }
 
@@ -43,8 +54,20 @@ background-color: #f1f1f1;
 	display: flex;
 	justify-content: space-evenly; /* Center the buttons horizontally */
 	align-items: center; /* Center the buttons vertically */
-	margin-left: 30px;
-	margin-right: 90px;
+
+
+/* 
+
+9.5.2023 - fix 
+
+ovo ti uzrokuje da sa desne strane baguje
+
+treba media query za mobile nav bar, da promeni i nece gubiti strukturu za mobile layout u navbar
+
+margin-left: 30px;
+	margin-right: 90px;*/
+
+
 	font-family: 'Amatic SC', cursive;
 	font-size: 18pt;
 
