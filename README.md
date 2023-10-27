@@ -1,5 +1,9 @@
 # PAWS
 
+The purpose of the app and website was to facilitate the adoption process for animal shelters, specifically for dogs and cats. 
+The app was similar to a social network for pet adoption centers, users could post requests for animal transportation across the country, including the desired transfer date and route, using MyMaps for custom routing. 
+
+
 ![1](https://github.com/lnxfsf/PAWS-/assets/99252096/d1a80aea-d6b8-4d7b-bacf-b4c48d91236e)
 
 
