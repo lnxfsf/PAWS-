@@ -1,5 +1,7 @@
 # PAWS
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/35bb87fd-94d1-422e-81f6-6a21a29f000d/deploy-status)](https://app.netlify.com/sites/pawz/deploys)
+
 The purpose of the app and website was to facilitate the adoption process for animal shelters, specifically for dogs and cats. 
 The app was similar to a social network for pet adoption centers, users could post requests for animal transportation across the country, including the desired transfer date and route, using MyMaps for custom routing. 
 
